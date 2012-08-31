@@ -3,6 +3,8 @@ Backbone Store Collection
 
 Extends a collection's `get` method to fetch models from the server if they not found locally.
 
+Write ups: [Using Backbone.js Class Properties as Data Stores](http://domchristie.co.uk/posts/31) and [Part 2](http://domchristie.co.uk/posts/32)
+
 Usage
 -----
 
