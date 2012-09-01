@@ -17,15 +17,17 @@ Usage
         
     posts.add(post);
     
+    // Retrieving model from collection
     posts.get(1, function() {
       success: function(model, response) {
-        // retrieves post from collection
+        // do something with model
       }
     });
     
+    // Fetching model from server
     posts.get(32, function() {
       success: function(model, response) {
-        // fetches post from server
+        // do something with model
       },
       error: function(model, response) {
         // say sorry
