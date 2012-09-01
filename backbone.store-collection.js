@@ -10,7 +10,10 @@ Backbone.StoreCollection = Backbone.Collection.extend({
       var newModel = new this.model({ id: id }),
           _this = this;
       newModel.fetch({
-        success: options.success,
+        success: function(model, response) {
+          _this.add(model);
+          options.success(model, response);
+        },
         error: function(model, response) {
           _this.remove(model);
           options.error(model, response);
